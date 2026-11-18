@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Бэль — парикмахерская в Набережных Челнах</title>
+<style>
+  :root { --wine:#5c1a2e; --wine2:#7a2440; --gold:#d4a24e; --cream:#faf3ec; }
+  * { margin:0; padding:0; box-sizing:border-box; font-family:Georgia,'Times New Roman',serif; }
+  body { background:var(--cream); color:#3a2230; line-height:1.6; }
+  header { background:linear-gradient(135deg,var(--wine),var(--wine2)); color:#fff; padding:16px 20px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:10; }
+  .logo { font-size:26px; letter-spacing:2px; }
+  .logo span { color:var(--gold); }
+  nav a { color:#fff; text-decoration:none; margin-left:18px; font-size:15px; }
+  .hero { background:linear-gradient(rgba(60,15,35,.75),rgba(60,15,35,.75)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200') center/cover; color:#fff; text-align:center; padding:90px 20px; }
+  .hero h1 { font-size:38px; margin-bottom:14px; }
+  .hero p { font-size:19px; opacity:.9; margin-bottom:28px; }
+  .btn { display:inline-block; background:var(--gold); color:#3a2230; padding:14px 32px; border-radius:30px; text-decoration:none; font-weight:bold; margin:6px; transition:.2s; }
+  .btn.outline { background:transparent; color:#fff; border:2px solid var(--gold); }
+  section { max-width:1000px; margin:0 auto; padding:60px 20px; }
+  h2 { text-align:center; font-size:30px; color:var(--wine); margin-bottom:36px; }
+  h2::after { content:''; display:block; width:60px; height:3px; background:var(--gold); margin:12px auto 0; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px; }
+  .card { background:#fff; border-radius:14px; padding:24px; box-shadow:0 4px 14px rgba(0,0,0,.07); }
+  .card h3 { color:var(--wine2); margin-bottom:8px; }
+  .price { color:var(--gold); font-weight:bold; font-size:18px; }
+  .master .role { font-size:14px; color:#8a6d78; }
+  .stars { color:var(--gold); }
+  .review { font-style:italic; }
+  .review .who { margin-top:12px; font-style:normal; font-weight:bold; color:var(--wine2); }
+  form input, form select, form button { width:100%; padding:13px; margin-bottom:14px; border:1px solid #d8c3cc; border-radius:8px; font-size:16px; }
+  form button { background:var(--wine); color:#fff; border:none; cursor:pointer; font-size:17px; }
+  .ok { display:none; background:#e8f5e9; color:#2e7d32; padding:14px; border-radius:8px; text-align:center; }
+  footer { background:var(--wine); color:#fff; text-align:center; padding:34px 20px; }
+  footer a { color:var(--gold); text-decoration:none; display:inline-block; margin:6px 12px; }
+  @media(max-width:600px){ .hero h1{font-size:28px;} nav{display:none;} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Бэ<span>ль</span></div>
+  <nav>
+    <a href="#uslugi">Услуги</a>
+    <a href="#masters">Мастера</a>
+    <a href="#zapis">Запись</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Парикмахерская «Бэль»</h1>
+  <p>Стрижки для всей семьи в Набережных Челнах. Работаем по записи — 9:00–20:00 в будни, 9:00–16:00 в выходные.</p>
+  <a class="btn" href="https://t.me/bel_demo_bot">Записаться в Telegram</a>
+  <a class="btn outline" href="#uslugi">Смотреть цены</a>
+</div>
+
+<section id="uslugi">
+  <h2>Услуги и цены</h2>
+  <div class="grid">
+    <div class="card"><h3>Женская стрижка</h3><p>Классика, каскад, боб</p><p class="price">от 600 ₽</p></div>
+    <div class="card"><h3>Мужская стрижка</h3><p>Классические и современные</p><p class="price">от 600 ₽</p></div>
+    <div class="card"><h3>Детская стрижка</h3><p>Бережно и быстро</p><p class="price">от 400 ₽</p></div>
+    <div class="card"><h3>Укладка</h3><p>Фена и на торжество</p><p class="price">от 500 ₽</p></div>
+  </div>
+</section>
+
+<section id="masters" style="background:#fff;">
+  <h2>Наши мастера</h2>
+  <div class="grid">
+    <div class="card master"><h3>Сания</h3><p class="role">Клиенты ходят к ней семьями годами</p></div>
+    <div class="card master"><h3>Лариса</h3><p class="role">Женские стрижки и укладки</p></div>
+    <div class="card master"><h3>Наталья</h3><p class="role">Мужской мастер, ей стригутся по 7–8 лет</p></div>
+    <div class="card master"><h3>Ирина</h3><p class="role">Стрижки и уход</p></div>
+  </div>
+</section>
+
+<section id="reviews">
+  <h2>Отзывы</h2>
+  <div class="grid">
+    <div class="card review"><div class="stars">★★★★★</div><p>«Ходим всей семьёй уже много лет, всегда довольны»</p><p class="who">Из отзывов 2ГИС</p></div>
+    <div class="card review"><div class="stars">★★★★★</div><p>«Отлично стригут, всегда приветливые»</p><p class="who">Из отзывов 2ГИС</p></div>
+    <div class="card review"><div class="stars">★★★★★</div><p>«Замечательные мастера, советую всем»</p><p class="who">Из отзывов 2ГИС</p></div>
+  </div>
+</section>
+
+<section id="zapis">
+  <h2>Запись</h2>
+  <form id="form" onsubmit="document.getElementById('form').style.display='none';document.getElementById('ok').style.display='block';return false;">
+    <input type="text" placeholder="Ваше имя" required>
+    <input type="tel" placeholder="Телефон +7..." required>
+    <select>
+      <option>Женская стрижка</option>
+      <option>Мужская стрижка</option>
+      <option>Детская стрижка</option>
+      <option>Укладка</option>
+    </select>
+    <input type="date">
+    <button type="submit">Отправить заявку</button>
+  </form>
+  <div class="ok" id="ok">Спасибо! Заявка принята — перезвоним вам. А ещё быстрее — записаться через бота:</div>
+  <a class="btn" href="https://t.me/bel_demo_bot">Записаться в Telegram</a>
+</section>
+
+<footer id="contacts">
+  <p><b>Бэль</b> — парикмахерская</p>
+  <p>Набережные Челны, Новый Город, 23-й комплекс, 5 (Автозаводский район)</p>
+  <p>Ежедневно: пн–пт 9:00–20:00, сб–вс 9:00–16:00</p>
+  <a href="tel:+79274559589">+7 (927) 455-95-89</a>
+  <a href="https://t.me/bel_demo_bot">Telegram-бот</a>
+  <a href="https://2gis.ru/nabchelny/firm/4081915443324973">Мы на 2ГИС</a>
+  <p style="margin-top:14px; font-size:14px; opacity:.8;">© Парикмахерская «Бэль»</p>
+</footer>
+
+</body>
+</html>
